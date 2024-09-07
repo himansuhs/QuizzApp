@@ -18,7 +18,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:4000/api/users/login",
+        "https://quizzapp-ard5.onrender.com/api/users/login",
         formData
       );
 
