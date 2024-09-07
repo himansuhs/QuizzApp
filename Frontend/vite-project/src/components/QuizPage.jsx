@@ -15,7 +15,7 @@ const QuizPage = () => {
     const fetchQuestions = async () => {
       try {
         const response = await axios.post(
-          "https://quizzapp-jih9.onrender.com/api/questions",
+          "http://localhost:4000/api/questions",
           { topics: selectedTopics }
         );
         setQuestions(response.data);
@@ -49,7 +49,7 @@ const QuizPage = () => {
       const userId = localStorage.getItem("userId");
 
       const response = await axios.post(
-        "https://quizzapp-jih9.onrender.com/api/submit-quiz",
+        "http://localhost:4000/api/submit-quiz",
         {
           userId, // Pass the userId from localStorage
           answers: selectedAnswers, // Pass the selected answers

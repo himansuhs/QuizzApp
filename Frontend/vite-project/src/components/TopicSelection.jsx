@@ -11,7 +11,7 @@ const TopicSelection = () => {
     const fetchTopics = async () => {
       try {
         const response = await axios.get(
-          "https://quizzapp-jih9.onrender.com/api/topics/select"
+          "http://localhost:4000/api/topics/select"
         );
         // Ensure topics are unique
         const uniqueTopics = Array.from(

@@ -22,7 +22,7 @@ const Register = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "https://quizzapp-jih9.onrender.com/api/users/register",
+        "http://localhost:4000/api/users/register",
         formData
       );
       console.log(response.data);
