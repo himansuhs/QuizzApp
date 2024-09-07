@@ -3,7 +3,8 @@ const mongoose = require("mongoose");
 async function connectDB() {
   try {
     mongoose.connect(process.env.MONGO_URI, {
-      ssl: true, // Add SSL configuration
+      ssl: true,
+      sslValidate: true, // Add SSL configuration
     });
     console.log("database connection established");
   } catch (error) {
