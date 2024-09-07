@@ -1,7 +1,4 @@
 const mongoose = require("mongoose");
-const debug = require("debug")("mongoose");
-
-mongoose.set("debug", debug);
 
 async function connectDB() {
   try {
