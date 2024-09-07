@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
   const [formData, setFormData] = useState({ email: "", password: "" });
@@ -69,9 +69,9 @@ const Login = () => {
         {error && <p className="text-red-500 mt-4 text-center">{error}</p>}
         <p className="text-center text-gray-400 mt-4">
           Don't have an account?{" "}
-          <a href="/register" className="text-blue-400 hover:underline">
+          <Link to={"/register"} className="text-blue-400 hover:underline">
             Register here
-          </a>
+          </Link>
         </p>
       </div>
     </div>
