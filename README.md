@@ -1,5 +1,10 @@
 Quiz App
-
+Check out the live version of the project here: https://quizzapp-1-g8gw.onrender.com/
+1. Navigate to the `Backend` directory:
+   ```bash
+   cd Backend
+  
+   ```
 2. Install backend dependencies:
    ```bash
    npm install
