@@ -4,7 +4,7 @@ async function connectDB() {
   try {
     mongoose.connect(process.env.MONGO_URI, {
       ssl: true,
-      sslValidate: true, // Add SSL configuration
+      // Add SSL configuration
     });
     console.log("database connection established");
   } catch (error) {
