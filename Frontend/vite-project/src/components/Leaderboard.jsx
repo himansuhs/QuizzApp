@@ -9,7 +9,7 @@ const Leaderboard = () => {
     const fetchLeaderboard = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:4000/api/leaderboard"
+          "https://quizzapp-jih9.onrender.com/api/leaderboard"
         );
         setLeaderboard(response.data);
         setLoading(false);
